@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Cairo', Arial, sans-serif; /* خط Cairo يعطي مظهرًا أجمل بالعربية */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* خلفية متدرجة بألوان مريحة */
+    color: #fff; /* لون النص الافتراضي أبيض لتناسب الخلفية */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 50px;
+    background: #ffffff; /* خلفية بيضاء للصندوق */
+    border-radius: 15px; /* حواف دائرية للصندوق */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* ظل للصندوق */
+    color: #333; /* لون النص في الصندوق غامق قليلاً ليكون واضحًا */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333; /* لون العنوان */
+    font-weight: bold;
+}
+
+input {
+    margin: 15px 0;
+    padding: 12px;
+    width: calc(100% - 24px);
+    border: 1px solid #ccc;
+    border-radius: 10px; /* حواف مستديرة لإدخال النص */
+    font-size: 16px;
+    text-align: center; /* توسيط النص داخل الصندوق أفقيًا */
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 10px; /* خفض المسافة العلوية للزر إلى 10 بكسل */
+    border: none;
+    border-radius: 10px; /* حواف مستديرة للزر */
+    cursor: pointer;
+    background-color: #28a745; /* اللون الأخضر الافتراضي */
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* تأثير على اللون والتحجيم عند التفاعل */
+}
+
+button:hover {
+    background-color: #218838; /* تغيير لون الزر عند التحويم */
+    transform: scale(1.05); /* تكبير الزر قليلاً عند التحويم */
+}
+
+button.error {
+    background-color: red; /* لون الزر عند الخطأ */
+}
+
+#statusMessage {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.red {
+    color: #e74c3c; /* لون النص عند الإدخال الأصغر (أحمر داكن) */
+}
+
+.blue {
+    color: #3498db; /* لون النص عند الإدخال الأكبر (أزرق فاتح) */
+}
